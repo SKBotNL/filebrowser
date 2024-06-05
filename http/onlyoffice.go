@@ -45,8 +45,8 @@ type OnlyOfficeCallback struct {
 }
 
 var onlyofficeClientConfigGetHandler = withUser(func(w http.ResponseWriter, r *http.Request, d *data) (int, error) {
-	if d.settings.OnlyOffice.JWTSecret == "" {
-		return http.StatusInternalServerError, errors.New("only-office integration must be configured in settings")
+	if d.settings.OnlyOffice.URL == "" {
+		return http.StatusInternalServerError, errors.New("ONLYOFFICE integration must be configured in settings")
 	}
 
 	if !d.user.Perm.Modify || !d.Check(r.URL.Path) {
