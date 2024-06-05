@@ -172,7 +172,7 @@
               controls
               v-model.number="settings.sharing.hashLength"
               id="sharing-hashLength"
-              :min="0"
+              :min="6"
             />
           </p>
         </div>
