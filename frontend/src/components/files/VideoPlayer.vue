@@ -149,6 +149,7 @@ const languageImports: LanguageImports = {
   'ja': () => import('video.js/dist/lang/ja.json'),
   'ko': () => import('video.js/dist/lang/ko.json'),
   'nl-be': () => import('video.js/dist/lang/nl.json'),
+  'nl': () => import('video.js/dist/lang/nl.json'),
   'pl': () => import('video.js/dist/lang/pl.json'),
   'pt-br': () => import('video.js/dist/lang/pt-BR.json'),
   'pt': () => import('video.js/dist/lang/pt-PT.json'),

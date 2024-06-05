@@ -14,6 +14,7 @@ import("dayjs/locale/it");
 import("dayjs/locale/ja");
 import("dayjs/locale/ko");
 import("dayjs/locale/nl-be");
+import("dayjs/locale/nl");
 import("dayjs/locale/pl");
 import("dayjs/locale/pt-br");
 import("dayjs/locale/pt");
@@ -109,6 +110,9 @@ export function detectLocale() {
       break;
     case /^nl-be\b/.test(locale):
       locale = "nl-be";
+      break;
+    case /^nl\b/.test(locale):
+      locale = "nl";
       break;
     default:
       locale = "en";

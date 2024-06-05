@@ -28,6 +28,7 @@ export default {
       ja: "日本語",
       ko: "한국어",
       "nl-be": "Dutch (Belgium)",
+      nl: "Dutch (Netherlands)",
       pl: "Polski",
       "pt-br": "Português",
       pt: "Português (Brasil)",
