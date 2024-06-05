@@ -134,7 +134,7 @@ table th {
 
 table th,
 table td {
-  padding: 0.5em 0;
+  padding: 0.5em 0.5em;
 }
 
 table td.small {

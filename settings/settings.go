@@ -10,6 +10,7 @@ import (
 )
 
 const DefaultUsersHomeBasePath = "/users"
+const DefaultSharingHashLength = 6
 
 // AuthMethod describes an authentication method.
 type AuthMethod string
@@ -28,6 +29,7 @@ type Settings struct {
 	Shell            []string            `json:"shell"`
 	Rules            []rules.Rule        `json:"rules"`
 	OnlyOffice       OnlyOffice          `json:"onlyoffice"`
+	Sharing          Sharing             `json:"sharing"`
 }
 
 // GetRules implements rules.Provider.

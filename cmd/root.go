@@ -343,6 +343,9 @@ func quickSetup(flags *pflag.FlagSet, d pythonData) {
 			ChunkSize:  settings.DefaultTusChunkSize,
 			RetryCount: settings.DefaultTusRetryCount,
 		},
+		Sharing: settings.Sharing{
+			HashLength: settings.DefaultSharingHashLength,
+		},
 		Commands: nil,
 		Shell:    nil,
 		Rules:    nil,

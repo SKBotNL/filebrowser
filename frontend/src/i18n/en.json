@@ -198,6 +198,8 @@
     "onlyOffice": "Only Office Integration",
     "onlyOfficeUrl": "Only Office URL (leave blank to disable)",
     "onlyOfficeJwtSecret": "Only Office JWT Secret (works only with https, leave blank to disable)",
+    "sharingHashLength": "Sharing hash length",
+    "sharing": "Sharing",
     "password": "Password",
     "passwordUpdated": "Password updated!",
     "path": "Path",

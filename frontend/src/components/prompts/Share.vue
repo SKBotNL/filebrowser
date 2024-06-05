@@ -1,5 +1,5 @@
 <template>
-  <div class="card floating" id="share">
+  <div style="max-width: fit-content;" class="card floating" id="share">
     <div class="card-title">
       <h2>{{ $t("buttons.share") }}</h2>
     </div>

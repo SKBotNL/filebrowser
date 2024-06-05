@@ -161,6 +161,20 @@
               id="onlyoffice-jwt"
             />
           </p>
+
+          <h3>{{ $t("settings.sharing") }}</h3>
+
+          <p>
+            <label for="sharing-hashLength">{{
+              $t("settings.sharingHashLength")
+            }}</label>
+            <vue-number-input
+              controls
+              v-model.number="settings.sharing.hashLength"
+              id="sharing-hashLength"
+              :min="0"
+            />
+          </p>
         </div>
 
         <div class="card-action">

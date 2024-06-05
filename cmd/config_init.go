@@ -46,6 +46,9 @@ override the options.`,
 				URL:       mustGetString(flags, "onlyoffice.url"),
 				JWTSecret: mustGetString(flags, "onlyoffice.jwtSecret"),
 			},
+			Sharing: settings.Sharing{
+				HashLength: mustGetUint(flags, "sharing.hashLength"),
+			},
 		}
 
 		ser := &settings.Server{

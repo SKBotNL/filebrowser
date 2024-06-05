@@ -91,7 +91,7 @@ var sharePostHandler = withPermShare(func(w http.ResponseWriter, r *http.Request
 		defer r.Body.Close()
 	}
 
-	bytes := make([]byte, 6) //nolint:gomnd
+	bytes := make([]byte, d.Sharing.HashLength) //nolint:gomnd
 	_, err := rand.Read(bytes)
 	if err != nil {
 		return http.StatusInternalServerError, err

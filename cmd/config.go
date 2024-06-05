@@ -51,6 +51,8 @@ func addConfigFlags(flags *pflag.FlagSet) {
 
 	flags.String("onlyoffice.url", "", "onlyoffice integration url")
 	flags.String("onlyoffice.jwtSecret", "", "onlyoffice integration secret")
+
+	flags.Uint16("sharing.hashLength", 6, "length of the hash used in links when sharing")
 }
 
 //nolint:gocyclo

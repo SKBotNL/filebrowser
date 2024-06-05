@@ -9,6 +9,7 @@ interface ISettings {
   shell: string[];
   commands: SettingsCommand;
   onlyoffice: SettingsOnlyOffice;
+  sharing: SettingsSharing;
 }
 
 interface SettingsDefaults {
@@ -60,4 +61,8 @@ interface SettingsUnit {
 interface SettingsOnlyOffice {
   url: string;
   jwtSecret: string;
+}
+
+interface SettingsSharing {
+  hashLength: number;
 }
