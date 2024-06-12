@@ -157,7 +157,6 @@ const fetchData = async () => {
 
     fileStore.updateRequest(res);
     document.title = `${res.name} - ${t("files.files")} - ${name}`;
-    
   } catch (err) {
     if (err instanceof Error) {
       error.value = err;
